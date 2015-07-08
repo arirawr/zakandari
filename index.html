@@ -1,6 +1,5 @@
 <!-- please ignore this miserable formatting */ -->
 <head>
-	<title>Baeternet</title>
 	<style type="text/css">
 		/* entire container, keeps perspective */
 		body {
@@ -36,7 +35,7 @@
 
 			font-size: 250px;
 			font-family: "Helvetica Neue", Helvetica;
-			color: #eee;
+			color: #B3B3D7;
 		}
 
 		/* front pane, placed above back */
@@ -80,7 +79,7 @@
 			float: left;
 			width: 50%;
 			height: inherit;
-			background-color: darkblue;
+			background-color: #000078;
 			z-index: 0;
 			transition: width 0.5s;
 		}
@@ -90,7 +89,7 @@
 			width: 50%;
 			height: inherit;
 			z-index: 0;
-			background-color: magenta;
+			background-color: #AA0078;
 			transition: width 0.5s;
 		}
 		.foreground {
@@ -145,12 +144,14 @@
 			/* Stuff to do when the mouse enters the element */
 			$('.pink').css("width", "100%");
 			//$('.ari').css("text-transform", "uppercase");
+			//$('.ari').css("font-weight", "400");
 			$('.blue').css("width", "0");
 			//$('.zak').css("text-transform", "lowercase");
 			$('.flipper').css("transform", "rotateY(180deg)");
 		}, function() {
 			$('.pink').css("width", "50%");
 			$('.blue').css("width", "50%");
+			//$('.ari').css("font-weight", "300");
 			//$('.ari').css("text-transform", "lowercase");
 			/* Stuff to do when the mouse leaves the element */
 		});
@@ -158,12 +159,14 @@
 			/* Stuff to do when the mouse enters the element */
 			$('.blue').css("width", "100%");
 			//$('.zak').css("text-transform", "uppercase");
+			//$('.zak').css("font-weight", "400");
 			$('.pink').css("width", "0");
 			//$('.ari').css("text-transform", "lowercase");
 			$('.flipper').css("transform", "rotateY(0deg)")
 		}, function() {
 			$('.pink').css("width", "50%");
 			$('.blue').css("width", "50%");
+			//$('.zak').css("font-weight", "300");
 			//$('.zak').css("text-transform", "lowercase");
 			/* Stuff to do when the mouse leaves the element */
 		});
