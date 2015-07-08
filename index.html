@@ -1,5 +1,6 @@
 <!-- please ignore this miserable formatting */ -->
 <head>
+	<title>Baeternet</title>
 	<style type="text/css">
 		/* entire container, keeps perspective */
 		body {
@@ -143,24 +144,27 @@
 		$('.right').hover(function() {
 			/* Stuff to do when the mouse enters the element */
 			$('.pink').css("width", "100%");
-			$('.ari').css("text-transform", "uppercase");
+			//$('.ari').css("text-transform", "uppercase");
 			$('.blue').css("width", "0");
-			$('.zak').css("text-transform", "lowercase");
-			$('.flip-container').trigger(e.type)
+			//$('.zak').css("text-transform", "lowercase");
+			$('.flipper').css("transform", "rotateY(180deg)");
 		}, function() {
 			$('.pink').css("width", "50%");
 			$('.blue').css("width", "50%");
+			//$('.ari').css("text-transform", "lowercase");
 			/* Stuff to do when the mouse leaves the element */
 		});
 		$('.left').hover(function() {
 			/* Stuff to do when the mouse enters the element */
 			$('.blue').css("width", "100%");
-			$('.zak').css("text-transform", "uppercase");
+			//$('.zak').css("text-transform", "uppercase");
 			$('.pink').css("width", "0");
-			$('.ari').css("text-transform", "lowercase");
+			//$('.ari').css("text-transform", "lowercase");
+			$('.flipper').css("transform", "rotateY(0deg)")
 		}, function() {
 			$('.pink').css("width", "50%");
 			$('.blue').css("width", "50%");
+			//$('.zak').css("text-transform", "lowercase");
 			/* Stuff to do when the mouse leaves the element */
 		});
 	</script>
